@@ -60,7 +60,7 @@ git remote
 git remote -v  
 
 ## リモートリポジトリを追加
-git remote add <リポジトリ名> <リポジトリURL>
+git remote add <リポジトリ名> <リポジトリURL>  
 ###  例：
 git remote add bak https://github.com/riki-develop/git_tutorial_bak.git  
 
@@ -82,6 +82,48 @@ git pull origin main
 ↓  
 ### 上記、省略可
 git pull  
+↓  
 ### 下記、同じ意味合い
 git fetch origin main  
 git merge origin/main  
+
+## ※プルの注意点
+### ブランチが複数ある場合「現在のブランチ」に内容が上書きされるので「現在のブランチ」をしっかり確認した上でプルする必要がある。
+
+## リモートの詳細情報を確認
+git remote show <リモート名>  
+### 例
+git remote show origin  
+
+## リモートを変更
+git remote rename <旧リモート名> <新リモート名>  
+### 例
+git remote rename bak new_bak  
+## リモートを削除
+git remote rm <リモート名>  
+### 例
+git remote rm new_bak
+
+# ブランチとマージ
+
+## ブランとは
+並行して複数機能を開発する仕組  
+ブランチはコミットを指し示したポインタ  
+HEADは「今自分がいるブランチ」を指し示したポインタ  
+コミットしたらブランチが指し示すコミットファイルが変わる  
+## ブランチの作成
+git branch <ブランチ名>
+### 例
+git branch feature  
+### ブランチの一覧を表示
+git branch  
+git branch -a  
+### 現状の確認
+git log --oneline --decorate
+
+## ブランチの切り替え
+git checkout <既存ブランチ名>  
+### 例
+git checkout feature  
+### ブランチを新規作成して且つ切り替える
+git checkout -b <ブランチ名>  
