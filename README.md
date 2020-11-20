@@ -59,6 +59,11 @@ git config --global alias.ch checkout
 git remote  
 git remote -v  
 
+## リモートリポジトリを追加
+git remote add <リポジトリ名> <リポジトリURL>
+###  例：
+git remote add bak https://github.com/riki-develop/git_tutorial_bak.git  
+
 ## gitから情報を取ってくる
 git fetch <リモート名>  
 git fetch origin  
