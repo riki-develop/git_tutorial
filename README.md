@@ -46,9 +46,15 @@ git reset HEAD .
 git commit --amend  
 ※注意点：リモートリポジトリにpushしたコミットはやり直しNG！  
 
-
 ## エイリアス作成：例
 git config --global alias.co commit  
 git config --global alias.st status  
 git config --global alias.br branch  
 git config --global alias.ch checkout  
+
+
+# GitHub(リモート)とのやり取り  
+
+## リモートを表示(確認)
+git remote  
+git remote -v  
