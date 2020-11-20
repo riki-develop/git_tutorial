@@ -58,3 +58,25 @@ git config --global alias.ch checkout
 ## リモートを表示(確認)
 git remote  
 git remote -v  
+
+## gitから情報を取ってくる
+git fetch <リモート名>
+git fetch origin
+### ブランチの内容を確認
+git branch -a  
+### ブランチの切り替え
+git checkout remotes/origin/ブランチ名(main)  
+### 元のブランチに戻る
+git checkout main  
+### リモートの情報をワークツリー（ローカル）に取り込む
+git merge origin/main  
+
+## リモートから情報を取得してmergeする
+git pull <リモート名> <ブランチ名>  
+git pull origin main  
+↓  
+### 上記、省略可
+git pull  
+### 下記、同じ意味合い
+git fetch origin main  
+git merge origin/main  
