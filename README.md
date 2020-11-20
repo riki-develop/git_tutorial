@@ -127,3 +127,17 @@ git checkout <既存ブランチ名>
 git checkout feature  
 ### ブランチを新規作成して且つ切り替える
 git checkout -b <ブランチ名>  
+
+## マージとは
+他人(別ブランチ)の変更内容を取り込む作業  
+git merge <ブランチ名>  
+git merge <リモート名/ブランチ名>  
+### 例
+git merge featuer  
+git merge origin/main  
+※作業中のブランチにマージ  
+## マージには3種類ある
+### Fast Foward：早送りになるマージ
+ブランチが枝分かれしてなかった時はブランチのポインタを前に進めるだけ  
+### Auto Merge：基本的なマージ
+枝分かれして開発していた場合、マージコミットという新しいコミットを作る  
