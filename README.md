@@ -36,6 +36,15 @@ git checkout -- <フォルダ名>
 ### 全部取り消す
 git checkout -- .
 
+## ステージした変更を取り消す
+git reset HEAD <ファイル名>  
+git reset HEAD <ファイル名>  
+### 全部取り消す
+git reset HEAD .  
+
+
+
+
 ## エイリアス作成：例
 git config --global alias.co commit  
 git config --global alias.st status  
