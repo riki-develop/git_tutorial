@@ -31,10 +31,10 @@ git rm --cached
 git mv <旧ファイル> <新ファイル>  
 
 ## ファイルへの変更を取り消す
-git checkout -- <ファイル名>
-git checkout -- <フォルダ名>
+git checkout -- <ファイル名>  
+git checkout -- <フォルダ名>  
 ### 全部取り消す
-git checkout -- .
+git checkout -- .  
 
 ## ステージした変更を取り消す
 git reset HEAD <ファイル名>  
@@ -60,8 +60,8 @@ git remote
 git remote -v  
 
 ## gitから情報を取ってくる
-git fetch <リモート名>
-git fetch origin
+git fetch <リモート名>  
+git fetch origin  
 ### ブランチの内容を確認
 git branch -a  
 ### ブランチの切り替え
