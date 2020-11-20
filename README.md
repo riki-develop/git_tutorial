@@ -42,7 +42,9 @@ git reset HEAD <ファイル名>
 ### 全部取り消す
 git reset HEAD .  
 
-
+## 直前の変更をやり直す
+git commit --amend  
+※注意点：リモートリポジトリにpushしたコミットはやり直しNG！  
 
 
 ## エイリアス作成：例
