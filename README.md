@@ -222,3 +222,15 @@ git checkout -b <ブランチ名>
 git add .  
 git commit -m ""  
 git push origin <ブランチ名>  
+↓  
+GitHubへ  
+プルリク→修正→マスターへマージ→不要ブランチを削除  
+↓  
+ターミナルにて後片付け  
+  
+git checkout main  
+※ブランチをマスターに戻す  
+git pull origin main  
+※リモートから最新情報を取得  
+git branch -d <不要ブランチ名>  
+※不要ブランチを削除  
