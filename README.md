@@ -188,3 +188,14 @@ git checkout -b <ブランチ名>
 git add <ファイル名>  
 git commit -m ""  
 git push origin <ブランチ名>  
+↓
+GitHub上でプルリクエスト作成  
+諸々修正を完了させGitHub上でブランチをマージ  
+不要になったブランチを削除  
+↓
+git checkout main  
+※ブランチをメインに戻す  
+git pull origin main  
+※リモートの最新情報をローカルに反映  
+git branch -d <不要ブランチ名>  
+※不要になったブランチを削除  
