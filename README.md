@@ -178,3 +178,13 @@ mainブランチをリリース用ブランチに、
 git fetch  
 git branch -a  
 
+# プルリクエストの流れ
+git pull origin main  
+※リモートから最新情報を持ってくる  
+git checkout -b <ブランチ名>  
+※ブランチを切る  
+ファイル変更  
+↓
+git add <ファイル名>  
+git commit -m ""  
+git push origin <ブランチ名>  
