@@ -80,3 +80,7 @@ git pull
 ### 下記、同じ意味合い
 git fetch origin main  
 git merge origin/main  
+
+# プルリクエストの流れ
+git pull origin main  
+※git を最新の情報にする  
