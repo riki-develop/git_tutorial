@@ -217,3 +217,8 @@ git pull origin main
 ↓  
 git checkout -b <ブランチ名>  
 ※ブランチを切る  
+開発（作業）  
+↓  
+git add .  
+git commit -m ""  
+git push origin <ブランチ名>  
