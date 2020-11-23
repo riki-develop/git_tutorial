@@ -212,3 +212,13 @@ git branch
 ※今いるブランチを確認  
 git status  
 ※ファイルに変更が無いか確認  
+git pull origin main  
+※ファイルの状況を最新にする  
+↓  
+git checkout -b <ブランチ名>  
+※ブランチを切る  
+開発（作業）  
+↓  
+git add .  
+git commit -m ""  
+git push origin <ブランチ名>  
