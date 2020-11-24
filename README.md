@@ -235,6 +235,29 @@ git pull origin main
 git branch -d <不要ブランチ名>  
 ※不要ブランチを削除  
 
-## リベース
+## リベースについて
 git rebase <ブランチ名>  
-※別ブランチの内容を統合したい時に<マージと使い分ける>…  
+※別ブランチの内容を統合したい時に<マージと使い分ける>  
+### 例
+git checkout main  
+※何らかの作業  
+git add .  
+git commit -m "コメント"  
+↓  
+git checkout feature  
+※何らかの作業  
+git add .  
+git commit -m "コメント"  
+↓  
+git rebase main  
+※mainの変更を取り込み  
+↓  
+git checkout main  
+git merge feature  
+※mainにfeatureの内容を取り込み  
+↓
+git push origin main  
+git branch -d feature  
+
+### merge した時にファストフォアードしない様にしたい場合の設定  
+git config --global merge.ff false  
