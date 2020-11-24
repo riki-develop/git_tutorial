@@ -283,3 +283,26 @@ git commit --amend
 ※修正  
 git rebase --continue  
 ※次のコミットへ移動  
+
+## タグについて
+git tag -a <タグ名> -m <メッセージ>  
+git tag -a "20201124_01" -m "version_20201124_01"  
+※注釈付きタグ  
+  
+git tag <タグ名>  
+git tag "20201124_01"  
+※軽量版タグ  
+  
+git tag <タグ名> <コミット名>  
+git tag "20201124_01" "8a6cbcc4"  
+※昔のコミットにタグを追加  
+  
+git show <タグ名>  
+git show "20201124_01"  
+※タグでコミットを検索  
+↓  
+git push <リモート名> <タグ名>  
+git push origin 20201124  
+※タグをリモートに送信  
+git push origin --tags  
+※リモートに一斉送信  
