@@ -38,7 +38,7 @@ git checkout -- .
 
 ## ステージした変更を取り消す
 git reset HEAD <ファイル名>  
-git reset HEAD <ファイル名>  
+git reset HEAD <フォルダ名>  
 ### 全部取り消す
 git reset HEAD .  
 
@@ -259,5 +259,27 @@ git merge feature
 git push origin main  
 git branch -d feature  
 
-### merge した時にファストフォアードしない様にしたい場合の設定  
+### merge した時にファストフォワードしない様にしたい場合の設定  
 git config --global merge.ff false  
+
+## プルのマージ型
+git pull <リモート名> <ブランチ名>  
+git pull origin main  
+※特徴_マージコミットログが残る  
+##　プルのリベース型
+git pull --rebase <リモート名> <ブランチ名>  
+git pull --rebase origin main  
+※特徴_マージコミットログが残らない  
+### リベース型のプルをデフォルト設定にしたい場合  
+git config --global pull.rebase true  
+#### mainブランチからプルする時だけ…  
+git config branch main.rebase true  
+
+## リベースで変更履歴を書き換える
+git rebase -i <コミットID>  
+git rebase -i HEAD~3  
+↓  
+git commit --amend  
+※修正  
+git rebase --continue  
+※次のコミットへ移動  
